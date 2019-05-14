@@ -1,0 +1,209 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+}
+
+.topnav
+{   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    margin-top: 30px;
+    margin-bottom: 30px;   
+}
+.topnav a
+{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: 300ms;
+    color:black;
+}
+
+.topnav a:hover{
+    cursor: pointer;
+    color: yellow;
+}
+.welcom{
+    background-image: url("../img/man.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+}
+.some-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+.philosophy{
+    background-color:rgba(41, 38, 38, 1);
+    height: 600px; 
+    position: relative;
+}
+
+.time{
+    background-image: url("../img/run2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+}
+.training{
+    height: 120px; 
+    position: relative; 
+}
+.training2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    padding: 3em;
+}
+.some-text2 {
+    line-height:1.875em;
+    margin: 2em ;
+    font-size:14px;
+    text-align: center;
+  }
+  .some-text3 {
+    line-height:1.875em;
+    margin: 2em ;
+    font-size:14px;
+    text-align: center;
+    color: white;
+  }
+.empty
+{
+    height: 350px;
+}
+.training-column1-image1{
+    background-image: url("../img/gira.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 450px;
+}
+.training-column1-image2{
+    background-image: url("../img/saikling.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 450px;
+}
+.training-column2-image1{
+    background-image: url("../img/pilates.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 450px;
+}
+.training-column2-image2{
+    background-image: url("../img/sila.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 450px;
+}
+#img1{
+    background-image: url("../img/gibkost.jpg");
+}
+#img1{
+    background-image: url("../img/tors.jpg");
+}
+#img3{
+    background-image: url("../img/ottag.jpg");
+}
+#img4{
+    background-image: url("../img/nogi.jpg");
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    align-items: center;
+    justify-items: center;
+    height: 500px;
+}
+.contact-text{
+    display: subgrid;    
+}
+.inputField {
+    font: normal normal normal 15px/1.875em montserrat,sans-serif;
+    background-color: transparent;
+    border: 2px solid rgba(24, 24, 24, 1);
+    color: #181818;
+    margin: 0 0 5px;
+    padding-left: 5px;
+    width: 80%;
+    text-align: left;
+    box-sizing: border-box;
+}
+.submit{
+background-color: rgba(24, 24, 24, 1);
+font: normal normal normal 15px/1.875em montserrat,sans-serif;
+border: 0;
+color: white;
+cursor: pointer;
+padding: 5px;
+margin: 0;
+}
+.footer
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color:rgba(41, 38, 38, 1);
+    align-content: center;
+    text-align:center;
+    height: 200px;
+    color: white;
+    border: 10px double black;
+}
+.footer2{
+    text-align:center;
+    background-color:rgba(41, 38, 38, 1);
+    padding: 10px;
+    color: white;
+}
+
+@media (max-width:800px){
+    .training2{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-gap: 3em;
+        padding: 3em;
+    }
+    .empty
+    {
+        display: none;
+    }
+    
+    .some-text span{
+        display: none;
+    }
+    .some-text2 {
+        display: none;
+    }
+    .some-text3 {
+        display: none;
+    }
+    .philosophy
+    {
+        display: none;
+    }
+}
